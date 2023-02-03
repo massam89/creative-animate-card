@@ -1,0 +1,53 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 15px;
+  background-color: rgb(251, 237, 219);
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#card-container {
+  height: 500px;
+  width: 700px;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+#card {
+  height: inherit;
+  width: inherit;
+  background-color: rgb(166, 219, 244);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+#front{
+  display: block;
+  width: inherit;
+  height: inherit;
+  background-image: url(./assets/ocean.jpg);
+  border-radius: 10px;
+}
+
+#back{
+  display: none;
+  transform: rotateX(180deg);
+  padding: 20px;
+  text-align: justify;
+}
